@@ -18,6 +18,7 @@ int main()
     int b = 5; int b_ = 2;
     double sum = 0; double mean = 0; double val = 0;
     double n; int N = 1;
+    outFile << "N Mean" << std::endl;
     while(inFile >> n)
     {
         val = (n - a)*(b_ - a_)/(b-a) + a_;
@@ -30,3 +31,4 @@ int main()
     inFile.close();
     return 0;
 }
+
